@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <h2 class="top">Question <span id="countq"></span> 10</h1>
+            <div class="driver"></div>
+            <div class="topb">
+            <h1 id="question"></h1>
+            <span id="sec" class="time"></span>
+            <span id="mint" class="mint"></span>
+        </div>
+
+            <div class="option">
+                <div class="answers">
+                    <label>
+                        <input type="radio" name="answer" id="optionInput1" value="3" class="answer">
+                        <span id="answer1" class="option"></span>
+                    </label>
+                </div>
+                <div class="answers">
+                    <label>
+                        <input type="radio" name="answer" id="optionInput2" value="3" class="answer">
+                        <span id="answer2"  class="option"></span>
+                    </label>
+                </div>
+                <div class="answers">
+                    <label>
+                        <input type="radio" name="answer" id="optionInput3" value="3" class="answer">
+                        <span id="answer3" class="option"></span>
+                    </label>
+                </div>
+                <div class="next">
+                    <button class="nextbtn" id="nextbtn" onclick="checkBtn()">Next Question</button>
+                </div>
+                <div class="next">
+                    <button class="nextbtn" id="nextbtn" onclick="checkBtn()">Check Result</button>
+                </div>
+            </div>
+            <div class="score" style="display: none;">
+                <h1 id="scoreo"></h1>
+            </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
